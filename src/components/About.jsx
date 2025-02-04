@@ -1,5 +1,7 @@
 import React from "react";
-import  Heli from "../components/heli";
+// import Radio from "./Radio";
+import Qualification from "./Qualification";
+
 function About() {
   return (
     <div
@@ -16,19 +18,16 @@ function About() {
 
         {/* Education & Training Section */}
         <div>
-          <div>
-            <h1 className="text-green-600 font-semibold text-xl">
-              Education & Training
-            </h1>
-            <span>
-              1. Mern FullStack Web Developer → Quality Software Technology →
-              2024
-              <br />
-              2. Bsc in Botany → Ramnirajan Junjunwala College → 2023
-            </span>
-            <Heli/>
-          </div>
-          
+          <Qualification />
+          <h1 className="text-green-600 font-semibold text-xl">
+            Education & Training
+          </h1>
+          <span>
+            1. Mern FullStack Web Developer → Quality Software Technology → 2024
+            <br />
+            2. Bsc in Botany → Ramnirajan Junjunwala College → 2023
+          </span>
+          {/* <Radio /> */}
         </div>
 
         <br />
@@ -46,43 +45,43 @@ function About() {
               2. Backend Development: Node.js, Express.js, RESTful API design
               <br />
               3. Database: MongoDB, Mongoose ORM State Management: Redux,
-              Context API Version
+              Context API
               <br />
-              4. Control: Git, GitHub Deployment: Heroku, Vercel, Netlify,
-              AWS,Cloudflare
+              4. Control: Git, GitHub Deployment: Heroku, Vercel, Netlify, AWS,
+              Cloudflare
               <br />
               5. Authentication: JWT, OAuth Testing: Jest, Postman, React
               Testing
               <br />
-              6. Library Soft Skills: Problem-solving, effective communication,
+              6. Soft Skills: Problem-solving, effective communication,
               continuous learning
             </span>
           </div>
         </div>
 
-        {/* Other Sections */}
+        {/* Professional Experience */}
         <h1 className="text-green-600 font-semibold text-xl">
           Professional Experience
         </h1>
         <span>
           1. Developed and maintained web applications using the MERN stack
-          (MongoDB, Express.js, React.js, Node.js) to create dynamic and
-          responsive user interfaces and robust backend systems.
+          (MongoDB, Express.js, React.js, Node.js).
           <br />
           2. Built RESTful APIs for seamless integration between frontend and
           backend, ensuring high performance and scalability.
           <br />
           3. Deployed applications to cloud platforms like Heroku, Vercel, and
-          Netlify, ensuring reliable performance and uptime.
+          Netlify.
           <br />
           4. Managed version control using Git and GitHub, enabling efficient
-          collaboration and code management across teams.
+          collaboration.
           <br />
-          5. Optimized frontend performance using best practices in React,
-          reducing load times and enhancing user experience.
+          5. Optimized frontend performance using best practices in React.
         </span>
         <br />
         <br />
+
+        {/* Achievements & Awards */}
         <h1 className="text-green-600 font-semibold text-xl">
           Achievements & Awards
         </h1>
@@ -94,11 +93,7 @@ function About() {
           >
             <strong>1. Web Development Basics</strong>
           </a>
-          from Springboard (by Infosys): Successfully built and deployed
-          dynamic, responsive web applications using HTML, CSS, JavaScript, and
-          Git, developed CRUD apps, integrated APIs, and received positive
-          feedback for clean, efficient code while earning certification in Web
-          Development Basics.
+          from Springboard (by Infosys).
           <br />
           <a
             href="https://skillsoft.digitalbadges.skillsoft.com/51441f46-7db9-4a4e-9622-a207bce0e5da#acc.xYakFzwR"
@@ -106,24 +101,20 @@ function About() {
             className="text-red-600"
           >
             <strong>2. JavaScript Novice to Professional</strong>
-          </a>
-          course by Infosys Springboard, gaining expertise in core JavaScript
-          concepts, DOM manipulation, asynchronous programming, and building
-          dynamic web applications with hands-on projects.
+          </a>{" "}
+          course by Infosys Springboard.
         </span>
         <br />
         <br />
+
+        {/* Mission Statement */}
         <h1 className="text-green-600 font-semibold text-xl">
           Mission Statement
         </h1>
         <p>
           As a <strong>MERN Full-Stack Web Developer</strong>, my mission is to
-          create efficient, scalable, and user-centric web applications by
-          leveraging the power of MongoDB, Express.js, React.js, and Node.js. I
-          am committed to delivering high-quality, innovative solutions that
-          enhance user experience, solve real-world problems, and drive business
-          growth, while continuously evolving my skills to stay at the forefront
-          of web development technologies.
+          create efficient, scalable, and user-centric web applications using
+          MongoDB, Express.js, React.js, and Node.js.
         </p>
       </div>
     </div>

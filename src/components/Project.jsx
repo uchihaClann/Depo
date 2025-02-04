@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Breed from "../Assets/breeds.png";
 import Pokemon from "../Assets/pokemon.png";
 import task from "../Assets/task.png";
@@ -6,6 +6,8 @@ import ContactForm from "../Assets/form.png";
 import Button from "./Button";
 
 function Project() {
+  const [shuffledItems, setShuffledItems] = useState([]);
+
   const cardItem = [
     {
       id: 1,
@@ -51,6 +53,20 @@ function Project() {
     },
   ];
 
+  // Shuffle function
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Swap
+    }
+    return shuffled;
+  };
+
+  useEffect(() => {
+    setShuffledItems(shuffleArray(cardItem)); // Shuffle on component mount
+  }, []);
+
   return (
     <div
       id="Project"
@@ -60,7 +76,7 @@ function Project() {
         <h1 className="text-3xl mb-5">Projects</h1>
         <span className="underline font-semibold">Featured Projects</span>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
-          {cardItem.map(
+          {shuffledItems.map(
             ({
               id,
               logo,
